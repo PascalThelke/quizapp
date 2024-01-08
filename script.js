@@ -21,12 +21,19 @@ function choosenAnswer(selected){ // selected wird als Eingabeparameter per onli
     console.log('Selected number is', selectedQuestionNumber); // ausgabe der nummer der gegebenen Antwort
     console.log('Current question', question['right_answer']);// ausgabe der aktuellen der richtigen Antwort
 
+    let idOfRightAnswer = `answer_${question['right_answer']}`;
+    let idOfRightLetterbox = `letterbox_${question['right_answer']}`;
+
     if(selectedQuestionNumber == question['right_answer']){ // wenn die ausgewählte Nummer der Anwort mit der Zahl in right answer übereinstimmt 
         console.log('right answer!')// ausgabe
-        document.getElementById(selected).parentNode.classList.add('bg-success');
+        document.getElementById(selected).parentNode.classList.add('succeeded-answer-box');
+        document.getElementById(idOfRightLetterbox).classList.add('bg-success');
     } else{ //anderfalls
         console.log('wrong answer!')// ausgabe
-        document.getElementById(selected).parentNode.classList.add('bg-danger');
+        document.getElementById(selected).parentNode.classList.add('failed-answer-box');
+        document.getElementById(selected).childNode.classList.add('bg-danger');
+        
+        document.getElementById(idOfRightAnswer).parentNode.classList.add('succeeded-answer-box');
     }
 
 }
