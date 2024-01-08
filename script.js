@@ -26,14 +26,14 @@ function choosenAnswer(selected){ // selected wird als Eingabeparameter per onli
 
     if(selectedQuestionNumber == question['right_answer']){ // wenn die ausgewählte Nummer der Anwort mit der Zahl in right answer übereinstimmt 
         console.log('right answer!')// ausgabe
-        document.getElementById(selected).parentNode.classList.add('succeeded-answer-box');
-        document.getElementById(idOfRightLetterbox).classList.add('bg-success');
+        document.getElementById(selected).parentNode.classList.add('succeeded-answer-box'); // greift auf das parent element zu und gibt die klasse succeeded-answer..
+        document.getElementById(idOfRightLetterbox).classList.add('bg-success'); // greift auf die Letterbox der richtigen Anwort zu und gibt die klasse bg-success
     } else{ //anderfalls
         console.log('wrong answer!')// ausgabe
-        document.getElementById(selected).parentNode.classList.add('failed-answer-box');
-        document.getElementById(selected).childNode.classList.add('bg-danger');
+        document.getElementById(selected).parentNode.classList.add('failed-answer-box'); // greift auf das parent element zu und gibt die klasse failed answer..
+        document.getElementById(selected).previousSibling.classList.add('bg-danger');   // ! sollte eigentlich auf den vorherigen partnercontainer zugreifen !
         
-        document.getElementById(idOfRightAnswer).parentNode.classList.add('succeeded-answer-box');
+        document.getElementById(idOfRightAnswer).parentNode.classList.add('succeeded-answer-box'); // makiert die richtige Antwort bei falscher Auswahl
     }
 
 }
