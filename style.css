@@ -23,7 +23,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.4);
-    padding: 8px;
+    padding: 12px;
 }
 
 .question-footer button {
@@ -42,8 +42,16 @@ body{
     height: 386px;
 }
 
+
+
 .w100{
     width: 100% !important;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-expand-lg .navbar-nav{
@@ -53,14 +61,29 @@ body{
 .container-fluid,
 .navbar-collapse{
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: rgb(39,53,92) !important;
     height: 386px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
+.container-fluid img{
+    width: 112px;
+    padding: 16px;
+}
+
 .bg-img{
     background-image: url(./img/brainbg.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.nav-link{
+    color: white;
+}
+
+.answer_choice:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
 }
