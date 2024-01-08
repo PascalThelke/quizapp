@@ -1,0 +1,66 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+}
+
+/* .main-container nav{
+    width: 40%;
+    height: 244px;
+} */
+
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 8px;
+}
+
+.question-footer button {
+    border-radius: 32px;
+    border: none;
+}
+
+.question-footer img{
+    width: 24px;
+    height: 32px;
+    padding: 4px;
+}
+
+.quiz-card{
+    width: 30rem;
+    height: 386px;
+}
+
+.w100{
+    width: 100% !important;
+}
+
+.navbar-expand-lg .navbar-nav{
+    flex-direction: column;
+}
+
+.container-fluid,
+.navbar-collapse{
+    flex-direction: column;
+    background-color: rgb(39,53,92) !important;
+    height: 386px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.bg-img{
+    background-image: url(./img/brainbg.jpg);
+    background-position: center;
+    background-size: cover;
+}
