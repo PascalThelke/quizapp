@@ -23,6 +23,7 @@ function choosenAnswer(selected){ // selected wird als Eingabeparameter per onli
 
     let idOfRightAnswer = `answer_${question['right_answer']}`;
     let idOfRightLetterbox = `letterbox_${question['right_answer']}`;
+    let idOfPickedLetterbox = `letterbox_${selectedQuestionNumber}`;
 
     if(selectedQuestionNumber == question['right_answer']){ // wenn die ausgewählte Nummer der Anwort mit der Zahl in right answer übereinstimmt 
         console.log('right answer!')// ausgabe
@@ -31,7 +32,7 @@ function choosenAnswer(selected){ // selected wird als Eingabeparameter per onli
     } else{ //anderfalls
         console.log('wrong answer!')// ausgabe
         document.getElementById(selected).parentNode.classList.add('failed-answer-box'); // greift auf das parent element zu und gibt die klasse failed answer..
-        document.getElementById(selected).previousSibling.classList.add('bg-danger');   // ! sollte eigentlich auf den vorherigen partnercontainer zugreifen !
+        document.getElementById(idOfPickedLetterbox).classList.add('bg-danger');   // ! sollte eigentlich auf den vorherigen partnercontainer zugreifen !
         
         document.getElementById(idOfRightAnswer).parentNode.classList.add('succeeded-answer-box'); // makiert die richtige Antwort bei falscher Auswahl
     }
