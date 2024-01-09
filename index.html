@@ -70,14 +70,16 @@
             </div>
 
             <div class="question-footer">
-                <button>
+                <button id="goprevious-button">
                     <img src="./img/arrow_left.png">
                 </button>
                 <div>
-                    <b>1</b> von <b id="total-questions"></b> Fragen
+                    <b id="actual-question">1</b> von <b id="total-questions"></b> Fragen
                 </div>
                 
-                <button><img src="./img/arrow_right.png" ></button>
+                <button onclick="nextQuestion()" disabled id="gonext-button">
+                    <img src="./img/arrow_right.png" >
+                </button>
             </div>
 
         </div>

@@ -10,10 +10,10 @@ let questions = [
     },
     {
         "question": "Welches HTML-Element wird verwendet, um einen Hyperlink zu erstellen?",
-        "answer_1": " <link>",
-        "answer_2": " <a>",
-        "answer_3": " <href>",
-        "answer_4": " <url>",
+        "answer_1": " link",
+        "answer_2": " a",
+        "answer_3": " href",
+        "answer_4": " url",
         "right_answer": 2,
     },
     {
@@ -26,10 +26,10 @@ let questions = [
     },
     {
         "question": "Welches HTML-Element wird verwendet, um eine geordnete Liste zu erstellen?",
-        "answer_1": " <ul>",
-        "answer_2": " <ol>",
-        "answer_3": " <li>",
-        "answer_4": " <dl>",
+        "answer_1": " ul",
+        "answer_2": " ol",
+        "answer_3": " li",
+        "answer_4": " dl",
         "right_answer": 2,
     },
     {
