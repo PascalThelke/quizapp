@@ -194,3 +194,12 @@ body {
     overflow: hidden;
     
 }
+
+#progress-bar{
+    background: rgb(39, 53, 92) ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}

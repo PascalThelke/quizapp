@@ -16,6 +16,11 @@ function showQuestion() { // rendert Frage und Antwortmöglichkeiten
     if (currentQuestion >= questions.length) {
         renderEndScreen();//show Endscreen
     } else {
+
+        let progress = (currentQuestion + 1) / questions.length;
+        progressinpercent = Math.round(progress * 100);
+        document.getElementById('progress-bar').innerHTML = `${progressinpercent}%`
+        document.getElementById('progress-bar').style = `width:${progressinpercent}%;`
         let actual = questions[currentQuestion];
         document.getElementById('actual-question').innerHTML = currentQuestion + 1;
         document.getElementById('question_text').innerHTML = actual['question'];
