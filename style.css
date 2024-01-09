@@ -170,7 +170,7 @@ body {
     position: absolute;
     right: 0;
     z-index: 99;
-    height: 60%;
+    height: 40%;
     top: 280px;
     transition: opacity 2s ease, height 2s ease;
 }
