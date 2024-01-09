@@ -12,7 +12,10 @@
 </head>
 
 <body onload="init()">
+    
     <div class="main-container">
+        <img id="end-screen-trophy" style="display: none;" src="./img/trophy.png">
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="center">
@@ -29,7 +32,31 @@
             </div>
         </nav>
         <div class="card quiz-card">
-            <div class="card-body bg-img w100">
+
+            <div class="card-body" id="end-screen" style="display: none;">
+                <div class="column center">
+                    <img src="./img/brain result.png" alt="">
+                    <span>
+                        <b>HTML QUIZ COMPLETE!</b>
+                    </span>
+                </div>
+
+                <span>
+                    YOUR SCORE <b>x/5</b>
+                </span>
+
+                <div class="column">
+                    <button type="button" class="btn btn-primary">
+                        SHARE
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" id="replay-btn">
+                        REPLAY
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="card-body bg-img w100" id="question-screen">
                 <h5 class="card-title" id="question_text">Frage</h5>
 
                 <div class="card mb-2 answer_choice" onclick="choosenAnswer(`answer_1`)">
