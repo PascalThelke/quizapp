@@ -82,3 +82,12 @@ function renderEndScreen(){
     document.getElementById('question-screen').style = 'display: none';
     document.getElementById('end-screen-trophy').classList.remove('hide');
 }
+
+function restartGame(){
+    document.getElementById('end-screen').classList.add('hide')
+    document.getElementById('question-screen').style = '';
+    document.getElementById('end-screen-trophy').classList.add('hide');
+    currentQuestion = 0;
+    rightQuestions = 0;
+    showQuestion();
+}
