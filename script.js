@@ -75,8 +75,7 @@ function resetAnswers() {
 }
 
 function renderEndScreen(){
-    document.getElementById('end-screen').style = '';
+    document.getElementById('end-screen').classList.remove('hide');
     document.getElementById('question-screen').style = 'display: none';
-    document.getElementById('end-screen-trophy').style = '';
-
+    document.getElementById('end-screen-trophy').classList.remove('hide');
 }
