@@ -35,7 +35,6 @@ function choosenAnswer(selectedAnswer) { // selected wird als Eingabeparameter p
     let question = questions[currentQuestion]; // question wird definiert indem die 0 stelle des Arrays aufgerufen wird
     selected = selectedAnswer;
     let selectedQuestionNumber = selected.slice(-1); // hier wird die letzte stelle des strings deklariert
-    
     idOfRightAnswer = `answer_${question['right_answer']}`; // nimmt sich die nummer aus dem array, welche der ID der Anwort entspricht
     idOfRightLetterbox = `letterbox_${question['right_answer']}`; // bestimmt die id der dazugehörigen letterbox
     idOfPickedLetterbox = `letterbox_${selectedQuestionNumber}`;    // bestimmt die id der letterbox in der ausgewählten Antwort

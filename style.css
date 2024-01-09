@@ -3,6 +3,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: rgba(39, 53, 92, 0.4);
 }
 
@@ -11,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 100vh;
 }
 
 /* .main-container nav{
@@ -23,8 +23,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.4);
     padding: 12px;
+    width: 40%;
+}
+
+#question-screen{
+    border-radius: 14px;
+    height: 100%;
+}
+
+#end-screen{
+    padding: 0;
 }
 
 .question-footer button {
