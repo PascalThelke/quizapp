@@ -59,12 +59,19 @@ function choosenAnswer(selectedAnswer) { // selected wird als Eingabeparameter p
 
 function nextQuestion() {
     currentQuestion++; // wir von Stelle 0 auf 1 im Array erhöht
-
+    document.getElementById('goprevious-button').disabled = false;
     document.getElementById('gonext-button').disabled = true;
     resetAnswers();
     showQuestion();
 
+}
 
+function previousQuestion() {
+    currentQuestion--; 
+    document.getElementById('goprevious-button').disabled = true;
+    document.getElementById('gonext-button').disabled = true;
+    resetAnswers();
+    showQuestion();
 
 }
 
